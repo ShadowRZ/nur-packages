@@ -14,7 +14,10 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  kose-font = pkgs.callPackage ./pkgs/kose-font { };
+  adw-gtk3 = pkgs.callPackage ./pkgs/adw-gtk3 { };
+  sddm-lain-wired-theme = pkgs.callPackage ./pkgs/sddm-lain-wired-theme { };
+  sddm-sugar-candy = pkgs.callPackage ./pkgs/sddm-sugar-candy { };
+  mkxp-z = pkgs.callPackage ./pkgs/mkxp-z {};
+  rvpacker = pkgs.callPackage ./pkgs/rvpacker {};
 }

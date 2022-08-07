@@ -6,10 +6,10 @@ on:
       - main
       - master
   schedule:
-    # rebuild everyday at 2:51
+    # rebuild everyday at 1:10
     # TIP: Choose a random time here so not all repositories are build at once:
     # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-    - cron:  '51 2 * * *'
+    - cron:  '10 1 * * *'
 jobs:
   tests:
     strategy:
@@ -20,7 +20,7 @@ jobs:
         # The repo name as used in
         # https://github.com/nix-community/NUR/blob/master/repos.json
         nurRepo:
-          - <YOUR_REPO_NAME>
+          - shadowrz
         # Set this to cache your build results in cachix for faster builds
         # in CI and for everyone who uses your cache.
         #
@@ -32,11 +32,12 @@ jobs:
         # Github found at
         # https://github.com/<your_githubname>/nur-packages/settings/secrets
         cachixName:
-          - <YOUR_CACHIX_NAME>
+          - shadowrz
         nixPath:
           - nixpkgs=channel:nixos-unstable
           - nixpkgs=channel:nixpkgs-unstable
-          - nixpkgs=channel:nixos-21.11
+          # Currently not necessary ?
+          #- nixpkgs=channel:nixos-21.11
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
