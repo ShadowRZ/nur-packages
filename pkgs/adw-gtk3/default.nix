@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   pname = "adw-gtk3";
-  version = "f92156ba174d94a35c8f33f458aeb368c57967ef";
+  version = "be9441ef8f1164aa0f9593ba3263711bea5c6a4f";
 
   src = fetchFromGitHub {
     owner = "lassekongo83";
     repo = pname;
     rev = version;
-    sha256 = "sha256-2obMFLVIOsc9oU8zbKamWztKz0W03iCyRDUGVA/T3mE=";
+    sha256 = "sha256-GqphWcWYf8XBPAQ9MWPGZ5Z0icKAMhJFxNHYecd7t/U=";
   };
 
   nativeBuildInputs = [ meson ninja sassc ];
