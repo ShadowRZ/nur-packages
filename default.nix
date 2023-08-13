@@ -21,4 +21,7 @@
   mkxp-z = pkgs.callPackage ./pkgs/mkxp-z { };
   rvpacker = pkgs.callPackage ./pkgs/rvpacker { };
   klassy = pkgs.libsForQt5.callPackage ./pkgs/klassy { };
-}
+} // (let iosevka-builds = pkgs.callPackage ./pkgs/iosevka-builds {}; in {
+  iosevka-minoko = iosevka-builds.minoko;
+  iosevka-aile-minoko = iosevka-builds.aile-minoko;
+})
