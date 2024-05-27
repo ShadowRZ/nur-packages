@@ -16,6 +16,7 @@
 
   kose-font = pkgs.callPackage ./pkgs/kose-font { };
   maoken-assorted-sans = pkgs.callPackage ./pkgs/maoken-assorted-sans { };
+  resource-han-rounded = pkgs.callPackage ./pkgs/resource-han-rounded { };
   sddm-lain-wired-theme = pkgs.callPackage ./pkgs/sddm-lain-wired-theme { };
   sddm-sugar-candy = pkgs.callPackage ./pkgs/sddm-sugar-candy { };
   klassy = pkgs.libsForQt5.callPackage ./pkgs/klassy { };
