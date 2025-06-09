@@ -10,6 +10,7 @@
   sddm-sugar-candy = pkgs.callPackage ./pkgs/sddm-sugar-candy { };
   klassy = pkgs.libsForQt5.callPackage ./pkgs/klassy { };
   klassy-qt6 = pkgs.callPackage ./pkgs/klassy-qt6 { };
+  rvpacker-ng = pkgs.callPackage ./pkgs/rvpacker-ng { };
   # Iosevka Builds
   iosevka-minoko = pkgs.callPackage ./pkgs/iosevka-minoko { };
   iosevka-aile-minoko = pkgs.callPackage ./pkgs/iosevka-aile-minoko { };
