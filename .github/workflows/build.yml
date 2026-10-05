@@ -43,4 +43,4 @@ jobs:
     - name: Build
       env:
         NIXPKGS_VERSION: ${{ matrix.nixpkgs }}
-      run: nix run github:Mic92/nix-fast-build -- -f . --skip-cached --cachix-cache shadowrz -I "nixpkgs=https://channels.nixos.org/${NIXPKGS_VERSION}/nixexprs.tar.zst"
+      run: nix run github:Mic92/nix-fast-build -- --file . --skip-cached --cachix-cache shadowrz -I "nixpkgs=https://channels.nixos.org/${NIXPKGS_VERSION}/nixexprs.tar.zst"
